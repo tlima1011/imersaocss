@@ -1,11 +1,56 @@
+/*Soft Reset do CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), 
   url("../img/img1-1.jpg");
   background-position: center;
   font-family: Arial; 
   height: 100vh;
-
+  font-size: 12px;
 }
+/*Se a tela tiver pelo menos vai carregar esses estilos */
+@media (min-width: 400px) {
+  body{
+    font-size: 14px;
+  }
+}
+/*São os breakpoints*/
+@media (min-width: 1200px) {
+  body{
+    font-size: 18px;
+    background-color: black;
+  }
+}
+
+h2{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
+  background-color: whitesmoke;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu a{
+  display: block;
+  padding: 10px 20px;
+}
+
 .menu ul{
   display: flex; 
   justify-content: space-around;
@@ -28,8 +73,17 @@ a:hover{
     color: black;
     text-decoration:underline; 
     text-shadow: aqua;
+    background-color: lightskyblue;
   
 }
+
+.site-title{
+  color: white;
+  font-size: 4em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
 .site-subtitle,
 .site-title{
   color: #47476b;
@@ -40,4 +94,16 @@ a:hover{
   font-style: italic;
   font-family: verdana; 
 }
+
+.img-portifolio{
+  width: 180px;
+  height: 180px;
+  float: left;
+  margin-left: 120px;
+  display: table;
+  
+}
+
+
+
 
