@@ -1,0 +1,92 @@
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+body {
+	background: #FFF1D6; 
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; 
+	line-height: 1.6;
+
+}
+
+article{
+	background: #FFF; 
+	border-color: #CCC #999 #999 #CCC; 
+	border: 1px solid #CCC; 
+	margin-bottom: 20px; padding: 10px;
+
+}
+
+article p{ 
+	font-family: 'Open Sans', sans-serif;
+}
+
+article h2{
+	border-bottom: 1px dashed black; 
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+article a{
+	color: #2C88A7; 
+	font-weight: bold;
+}
+
+h1{
+	color: black; 
+	text-decoration: none;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+article img{
+	border: 1px solid black; 
+	float: left; 
+	margin: 10px 10px 0 0; 
+	padding: 2px; 
+	width: 30%;
+}
+
+footer {
+	clear: both;
+}
+
+footer{
+	font-size: 12px; 
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.places{
+	float: left; 
+	width: 660px;
+}
+
+aside {
+	background-color: #FFFBE4; 
+	border: 1px solid #C9BC8F; 
+	float: right; 
+	padding: 10px; 
+	width: 260px;
+}
+
+aside h3 {
+	font-size: 14px; margin-top: 0;
+	
+} 
+
+aside ol {
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.lugares{
+	border-radius: 5%;
+}
+
+.lugares:hover{
+	-moz-transform: scale(3.1);
+	-webkit-transform: scale(3.1);
+	transform: scale(3.1);
+}
