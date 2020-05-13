@@ -9,9 +9,7 @@ body {
   background-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), 
   url("../img/img1-1.jpg");
   background-position: center;
-  background-repeat: no-repeat;
   font-family: Arial; 
-  /*overflow: hidden;*/
   height: 100vh;
   font-size: 12px;
 }
@@ -24,10 +22,10 @@ body {
 
 h2{
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Source Code Pro', monospace;
   margin-bottom: 20px;
   font-style: italic;
-  clear: both;
+  font-size: 30px;
 }
 
 header{
@@ -35,6 +33,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .menu{
@@ -47,43 +46,45 @@ header{
 .menu a{
   display: block;
   padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .menu ul{
   display: flex; 
   justify-content: space-around;
-  
+  font-family: 'Montserrat', sans-serif;
 }
 
 .menu li{
   list-style: none;
-  font-style: italic;
-  font-size: 20px;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 a { 
-  color: teal; 
+  color: black; 
   text-decoration: none;  
-  
+  font-family: 'Montserrat', sans-serif;
 }
 
 a:hover{
     color: black;
     text-decoration:underline; 
-    text-shadow: aqua;
     background-color: lightskyblue;
-  
+    font-style: italic;
 }
 
 .img-hipster{
   width: 420px;
   height: 300px;
+  border-radius: 5%;
 }
 
 .site-title{
   color: white;
   font-size: 4em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif;
   
 }
 
@@ -95,34 +96,74 @@ a:hover{
 
 .site-subtitle{
   font-style: italic;
-  font-family: verdana; 
-}
-
-.img-portifolio{
-  width: 150px;
-  height: 120px;
-  margin-left: 100px;
-  /*margin-right: 100px;*/
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1em;
 }
 
 .portifolio{
   display: flex;
   flex-direction: column;
-  background-color: white;
+  font-family: 'Source Code Pro', monospace;
 }
 
-.itens{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.portifolio .grid{
+  display: grid;
+  gap: 1em;
+  background-color: aquamarine;
+}
+@media(min-width: 560px){
+  .portifolio .grid{
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media(min-width: 880px){
+  .portifolio .grid{
+    grid-template-columns: repeat(3, 240px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 5.5em - 48px);
+  }
+}
+
+@media(min-width: 1200px){
+  .img-portifolio{
+    width: auto;
+    height: 10em;
+  }
   
 }
 
-figcaption{
+.portifolio figure{
   text-align: center;
-  margin: 2px 100px 9px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
+}
+
+.portifolio figcaption{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.portifolio h2{
+  font-family: 'Source Code Pro', monospace;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+  text-align: center;
+}
+
+.img-portifolio{
+  width: 180px;
+  height: 180px;
+  margin-left: 6px;
+  object-fit: cover;
+  border-radius: 15%;
+}
+
+.img-portifolio:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.7;
 }
 
 footer{ 
