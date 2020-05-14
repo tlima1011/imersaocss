@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+	<script>
+		function allowDrop(ev){
+			ev.preventDefault(); 
+		}
+		function drag(ev){
+			ev.dataTransfer.setData("text", ev.target.id); 
+		}
+		function drop(ev){
+			ev.preventDefault(); 
+			var data = ev.dataTransfer.getData("text"); 
+			ev.target.appendChild(document.getElementById(data));  
+		}
+	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>...::::Thiago Moura::::...</title>
@@ -24,13 +36,15 @@
 				<li><a href="#contato">Contato</a></li>
 			</ul>
 		</nav>
+		
 		<div class="titulo">
 			<h1 class="site-title">Thiago Moura</h1>
 			<h2 class="site-subtitle">jr. front-end developer</h2>
-			<img src="./img/hipster.png" height="300px" width="400px" alt="hipster">
+			<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<img id="drag1" src="./img/hipster.png" draggable="true" ondragstart="drag(event)" height="300px" width="400px" alt="hipster">
+			</div>
 		</div>
 	</header>
-	
 	<section class="portifolio" id="projetos">
 		<h2>Projetos</h2>
 		<div class="grid">
