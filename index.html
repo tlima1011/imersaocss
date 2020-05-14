@@ -1,69 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>...::::Thiago Moura::::...</title>
-  <link rel="stylesheet" href="css/estilos.css">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Gloria+Hallelujah&family=Montserrat:wght@100&family=Noto+Sans+JP:wght@100&family=Roboto:wght@100&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="./img/icone.jpg" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>...::::Thiago Moura::::...</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Gloria+Hallelujah&family=Montserrat:wght@100&family=Noto+Sans+JP:wght@100&family=Roboto:wght@100&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap"
+		rel="stylesheet">
+	<link rel="shortcut icon" href="./img/icone.jpg" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/4ac8cea6a6.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <header>
-    <nav class="menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="portifolio.html" target="_blank">Portfólio</a></li>
-        <li><a href="https://twitter.com/TLima1011" target="_blank">Contato</a></li>
-      </ul>
-	</nav>
-	<div>
-		<h1 class="site-title">Thiago Moura</h1>
-		<h2 class="site-subtitle">jr. front-end developer</h2>
-		<img class="img-hipster" src="./img/hipster.png" alt="hipster">
-	</div>
-  </header>
-  
-  <section class="portifolio">
+	<header>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="portifolio.html" target="_blank">Portfólio</a></li>
+				<li><a href="#projetos">Projetos</a></li>
+				<li><a href="#contato">Contato</a></li>
+			</ul>
+		</nav>
+		<div class="titulo">
+			<h1 class="site-title">Thiago Moura</h1>
+			<h2 class="site-subtitle">jr. front-end developer</h2>
+			<img src="./img/hipster.png" height="300px" width="400px" alt="hipster">
+		</div>
+	</header>
+	
+	<section class="portifolio" id="projetos">
 		<h2>Projetos</h2>
 		<div class="grid">
 			<figure>
-				<img class ="img-portifolio" src="./img/ecommerce.jpg" alt="ecommerce">
+				<img class="img-portifolio" src="./img/ecommerce.jpg" alt="ecommerce">
 				<figcaption>eCommerce</figcaption>
 			</figure>
 			<figure>
-				<img class ="img-portifolio" src="./img/mobile.jpg" alt="Mobile"/>
+				<img class="img-portifolio" src="./img/mobile.jpg" alt="Mobile" />
 				<figcaption>Mobile</figcaption>
 			</figure>
 			<figure>
-				<a href="https://tlima1011.github.io/imersaocss/" target="_blank"><img class ="img-portifolio" src="./img/webdesign.jpg" alt="Web design"/></a>
+				<a href="https://tlima1011.github.io/imersaocss/" target="_blank"><img class="img-portifolio"
+						src="./img/webdesign.jpg" alt="Web design" /></a>
 				<figcaption>Web design</figcaption>
 			</figure>
 			<figure>
-				<a href="https://github.com/tlima1011" target="_blank"><img class ="img-portifolio" src="./img/pessoais.jpg" alt="Projetos pessoais"/></a>
+				<a href="https://github.com/tlima1011" target="_blank"><img class="img-portifolio"
+						src="./img/pessoais.jpg" alt="Projetos pessoais" /></a>
 				<figcaption>Projetos pessoais</figcaption>
 			</figure>
 			<figure>
-				<a href="https://www.alura.com.br/formacao-data-science?gclid=CjwKCAjwte71BRBCEiwAU_V9h-evETLmd4OsAb99DqTwvcighGLBZLYnmsLkMhFHl8I2xjE1rQfZDhoCpjMQAvD_BwE" target="_blank"><img class="img-portifolio" src="./img/exmachina1.jpg" alt="Inteligencia Artificial"></a> 
+				<a href="https://www.alura.com.br/formacao-data-science?gclid=CjwKCAjwte71BRBCEiwAU_V9h-evETLmd4OsAb99DqTwvcighGLBZLYnmsLkMhFHl8I2xjE1rQfZDhoCpjMQAvD_BwE"
+					target="_blank"><img class="img-portifolio" src="./img/exmachina1.jpg"
+						alt="Inteligencia Artificial"></a>
 				<figcaption>Data Science</figcaption>
 			</figure>
 		</div>
 	</section>
-	<footer>
-		<div class='footer-text'> 
-			<a href="https://www.instagram.com/thiago.oficial1/" target="blank"><img class="img-logos" src="./img/instagram-logo.png" alt="instagram"></a>
+	<section class="contato" id="contato">
+		<div class="grid icons">
+			<a href="https://www.instagram.com/thiago.oficial1/" target="blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://github.com/tlima1011" target="blank"><i class="fab fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/thiago-moura-a426715a" target="blank"><i
+					class="fab fa-linkedin-in"></i></a>
+			<a href="https://twitter.com/TLima1011" target="_blank"><i class="fab fa-twitter"></i></a>
 		</div>
-
-		<div class='footer-text'> 
-			<a href="https://github.com/tlima1011" target="blank"><img class="img-logos" src="./img/github-logo1.png" alt="github"></a>
-		</div>
-
-		<div class='footer-text'> 
-			<a href="https://www.linkedin.com/in/thiago-moura-a426715a" target="blank"><img class="img-logos" src="./img/linkedin.jpg"></a>
-		</div>
-
-	</footer>
+	</section>
 </body>
 
 </html>
