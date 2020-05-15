@@ -108,13 +108,15 @@ header{
 
 .imersao-css a{
   text-decoration: none;
-  color: coral;
+  color: blue;
 }
 
 .imersao-css a:hover{ 
   background-color: coral;
   font-style: italic;
   text-decoration: underline;
+  color: blue;
+  font-weight: bold;
 }
 
 .img-hipster{
