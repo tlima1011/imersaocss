@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<script>
-		function allowDrop(ev){
-			ev.preventDefault(); 
+		function allowDrop(ev) {
+			ev.preventDefault();
 		}
-		function drag(ev){
-			ev.dataTransfer.setData("text", ev.target.id); 
+		function drag(ev) {
+			ev.dataTransfer.setData("text", ev.target.id);
 		}
-		function drop(ev){
-			ev.preventDefault(); 
-			var data = ev.dataTransfer.getData("text"); 
-			ev.target.appendChild(document.getElementById(data));  
+		function drop(ev) {
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData("text");
+			ev.target.appendChild(document.getElementById(data));
 		}
 	</script>
 	<meta charset="UTF-8">
@@ -36,25 +37,29 @@
 				<li><a href="#contato">Contato</a></li>
 			</ul>
 		</nav>
-		
 		<div class="titulo">
 			<h1 class="site-title">Thiago Moura</h1>
 			<h2 class="site-subtitle">jr. front-end developer</h2>
 			<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-			<img id="drag1" src="./img/hipster.png" draggable="true" ondragstart="drag(event)" height="300px" width="400px" alt="hipster">
+				<img id="drag1" src="./img/hipster.png" draggable="true" ondragstart="drag(event)" height="300px"
+					width="400px" alt="hipster">
 			</div>
 		</div>
 	</header>
+	<section class="imersao-css">
+		<h2>Semana da Imersão CSS - Alura</h2>
+		<p>Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css" target="_blank">Imersão CSS da Alura</a>, foi ótima essa semana imersão pois aprendemos a interagir ainda mais e ter novas experiências 👏</p>
+	</section>
 	<section class="portifolio" id="projetos">
 		<h2>Projetos</h2>
 		<div class="grid">
 			<figure>
-				<img class="img-portifolio" src="./img/ecommerce.jpg" alt="ecommerce">
-				<figcaption>eCommerce</figcaption>
+				<a href="https://github.com/tlima1011/python3-curso-em-video" target="_blank"><img class="img-portifolio" src="./img/python.png" alt="python"></a>
+				<figcaption>Python</figcaption>
 			</figure>
 			<figure>
-				<img class="img-portifolio" src="./img/mobile.jpg" alt="Mobile" />
-				<figcaption>Mobile</figcaption>
+				<img class="img-portifolio" src="./img/java.jpg" alt="java" />
+				<figcaption>Java</figcaption>
 			</figure>
 			<figure>
 				<a href="https://tlima1011.github.io/imersaocss/" target="_blank"><img class="img-portifolio"

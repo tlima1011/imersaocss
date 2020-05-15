@@ -97,6 +97,26 @@ header{
     transition: 1s;
 }
 
+.imersao-css p{
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
+  margin-bottom: 1em;
+  color: black;
+}
+
+.imersao-css a{
+  text-decoration: none;
+  color: coral;
+}
+
+.imersao-css a:hover{ 
+  background-color: coral;
+  font-style: italic;
+  text-decoration: underline;
+}
+
 .img-hipster{
   width: 420px;
   height: 300px;
@@ -109,17 +129,34 @@ header{
   font-family: 'Roboto', sans-serif;
   
 }
-
+.sobre, 
 .site-subtitle,
 .site-title{
   color: #47476b;
   text-align: center; 
 }
 
+.sobre, 
 .site-subtitle{
   font-style: italic;
   font-family: 'Source Code Pro', monospace;
   line-height: 1em;
+}
+
+.sobre p{
+  color: black; 
+  text-indent: 2em;
+  margin-bottom: 1.4em;
+  
+}
+
+@media (min-width: 1200px){
+  .sobre, 
+  .portifolio{
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .portifolio{
@@ -137,6 +174,26 @@ header{
   .portifolio .grid{
     grid-template-columns: 240px 240px;
   }
+}
+.sobre a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sobre a:hover{
+  text-decoration: underline;
+  background-color: tomato;
+}
+
+.sobre .avatar{ 
+  float: left;
+  border-radius: 40%;
+}
+
+.sobre .avatar img{
+  /*border-radius: 50%;*/
+  clip-path: circle(50% at 50% 50%)
 }
 
 @media(min-width: 880px){
@@ -182,11 +239,20 @@ header{
   transition: transform 500ms;
 }
 
+
 .img-portifolio:hover{
   -moz-transform: scale(1.3);
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
   opacity: 0.8;
+}
+
+.img-portifolio1{
+  width: 160px;
+  height: 160px;
+  margin-left: 6px;
+  border-radius: 15%;
+
 }
 
 .contato{
@@ -215,7 +281,40 @@ header{
   
 }
 
+.flip-card{
+  background-color: purple;
+  perspective: 500px;
+}
 
+.flip-card:hover, .card{
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.card:hover{
+  transform: rotateY(180deg);
+}
+
+.card-front, 
+.card-back{
+  backface-visibility: hidden;
+  left: 0;
+  position: absolute;
+  top: 0; 
+
+}
+
+.card-back{
+  background-color: white;
+  height: 180px;
+  width: 100vh;
+  transform: rotateY(180 deg);
+}
 
 
 
