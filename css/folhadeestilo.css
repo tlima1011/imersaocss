@@ -3,22 +3,39 @@
 	width: 960px;
 }
 body {
-	background: #FFF1D6; 
+	/*background: #FFF1D6; */
+	background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), 
+	url("../img_sao_paulo/são-paulo-5.jpg");
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif; 
 	line-height: 1.6;
-
 }
+
 
 article{
 	background: #FFF; 
 	border-color: #CCC #999 #999 #CCC; 
 	border: 1px solid #CCC; 
 	margin-bottom: 20px; padding: 10px;
+}
 
+.ibira a, 
+.boteco a, 
+.avenida_paulista a{ 
+	text-decoration: none;
+	font-style: normal;
+	color: black;
+}
+
+.ibira a:hover, 
+.boteco a:hover, 
+.avenida_paulista a:hover{ 
+	font-weight: bolder;
+	font-size: 15px;
+	background-color: aqua;
 }
 
 article p{ 
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 article h2{
@@ -48,14 +65,13 @@ article img{
 	width: 30%;
 }
 
-footer {
-	clear: both;
-}
-
 footer{
-	font-size: 12px; 
+	font-size: 20px; 
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
+	clear: both;
+	color: black;
+	font-weight: bold;
 }
 
 .places{
@@ -77,7 +93,7 @@ aside h3 {
 } 
 
 aside ol {
-	font-size: 12px;
+	font-size: 14px;
 	font-family: 'Roboto', sans-serif;
 }
 
